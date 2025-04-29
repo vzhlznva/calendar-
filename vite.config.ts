@@ -63,7 +63,7 @@ export default defineConfig({
     }),
 
     VitePWA({
-      base: "/",
+      base: "/calendar-/",
       registerType: "autoUpdate",
       includeAssets: ["logo.png", "robots.txt"],
       manifest: {
