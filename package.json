@@ -6,7 +6,9 @@
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview --host",
-    "test-ts": "vue-tsc --noEmit"
+    "test-ts": "vue-tsc --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.17",
@@ -28,6 +30,7 @@
     "@types/node": "22.15.3",
     "@types/nprogress": "0.2.0",
     "@vitejs/plugin-vue": "^5.2.3",
+    "gh-pages": "^6.3.0",
     "sass": "^1.87.0",
     "typescript": "5.8.3",
     "unplugin-vue-components": "^28.5.0",
