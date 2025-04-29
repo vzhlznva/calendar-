@@ -14,7 +14,7 @@ const SILENT = Boolean(process.env.SILENT) ?? false;
 // https://vitejs.dev/config/
 export default defineConfig({
   root: process.cwd(),
-  base: "/",
+  base: "/calendar-/",
   publicDir: "public",
   logLevel: SILENT ? "error" : "info",
 
