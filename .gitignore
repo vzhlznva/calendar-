@@ -109,3 +109,4 @@ typings/
 .DS_Store
 *.local
 components.d.ts
+dist/

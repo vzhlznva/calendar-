@@ -69,7 +69,8 @@ export default defineConfig({
       manifest: {
         name: "Calendar App",
         short_name: "Calendar",
-        start_url: "/?utm_source=pwa",
+        start_url: "/calendar-/?utm_source=pwa",
+        scope: "/calendar-/",
         display: "standalone",
         theme_color: "#ffffff",
         background_color: "#ffffff",
@@ -84,6 +85,7 @@ export default defineConfig({
       workbox: {
         swDest: "sw.js",
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+        globIgnores: [],
       },
     }),
   ],
