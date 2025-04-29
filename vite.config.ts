@@ -67,18 +67,23 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["logo.png", "robots.txt"],
       manifest: {
-        name: "Default",
-        short_name: "Default",
+        name: "Calendar App",
+        short_name: "Calendar",
         start_url: "/?utm_source=pwa",
         display: "standalone",
         theme_color: "#ffffff",
         background_color: "#ffffff",
         icons: [
           {
-            src: "logo.png",
-            type: "image/png",
+            src: "/calendar-/favicon.ico",
+            sizes: "64x64 32x32 24x24 16x16",
+            type: "image/x-icon",
           },
         ],
+      },
+      workbox: {
+        swDest: "sw.js",
+        globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
       },
     }),
   ],
