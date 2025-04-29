@@ -1,0 +1,15 @@
+@use "./abstracts/reset";
+@use "./abstracts/transitions";
+
+@use "./variables/colors";
+@use "./variables/fonts";
+@use "./calendar";
+
+html,
+body,
+#app {
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+  height: 100%;
+  min-height: 100vh;
+}

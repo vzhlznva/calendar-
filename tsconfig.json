@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": ["esnext", "dom"],
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "/~/*": ["./src/assets/*"],
+      "/@src/*": ["./src/*"]
+    },
+    "typeRoots": ["./src/types", "./node_modules/@types", "./node_modules"],
+    "types": [
+      "node",
+      "nprogress",
+      "vite/client",
+      "vite-plugin-vue-layouts/client",
+      "vite-plugin-pages/client"
+    ]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
