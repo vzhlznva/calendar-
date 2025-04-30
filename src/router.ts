@@ -10,7 +10,9 @@ const routes = setupLayouts(generatedRoutes);
 
 export function createRouter() {
   const router = createClientRouter({
-    history: createWebHistory(),
+    history: createWebHistory(
+      process.env.NODE_ENV === "production" ? "/calendar-/" : "/"
+    ),
     routes,
   });
 
