@@ -83,7 +83,7 @@ export default defineConfig({
         ],
       },
       workbox: {
-        swDest: "sw.js",
+        swDest: "dist/sw.js",
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
         globIgnores: [],
       },
