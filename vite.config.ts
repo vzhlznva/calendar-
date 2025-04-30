@@ -63,7 +63,7 @@ export default defineConfig({
     }),
 
     VitePWA({
-      base: "/calendar-/",
+      base: process.env.NODE_ENV === "production" ? "/calendar-/" : "/",
       registerType: "autoUpdate",
       includeAssets: ["logo.png", "robots.txt"],
       manifest: {
